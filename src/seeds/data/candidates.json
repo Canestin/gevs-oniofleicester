@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Candidate 1 C1 P1",
+    "constituency": { "id": 1 },
+    "party": { "id": 1 }
+  },
+  {
+    "id": 2,
+    "name": "Candidate 2 C1 P2",
+    "constituency": { "id": 1 },
+    "party": { "id": 2 }
+  },
+  {
+    "id": 3,
+    "name": "Candidate 3 C1 P3",
+    "constituency": { "id": 1 },
+    "party": { "id": 3 }
+  },
+  {
+    "id": 4,
+    "name": "Candidate 4 C1 P4",
+    "constituency": { "id": 1 },
+    "party": { "id": 4 }
+  },
+  {
+    "id": 5,
+    "name": "Candidate 5 C2 P1",
+    "constituency": { "id": 2 },
+    "party": { "id": 1 }
+  },
+  {
+    "id": 6,
+    "name": "Candidate 6 C2 P2",
+    "constituency": { "id": 2 },
+    "party": { "id": 2 }
+  },
+  {
+    "id": 7,
+    "name": "Candidate 7 C2 P3",
+    "constituency": { "id": 2 },
+    "party": { "id": 3 }
+  },
+  {
+    "id": 8,
+    "name": "Candidate 8 C2 P4",
+    "constituency": { "id": 2 },
+    "party": { "id": 4 }
+  },
+  {
+    "id": 9,
+    "name": "Candidate 9 C3 P1",
+    "constituency": { "id": 3 },
+    "party": { "id": 1 }
+  },
+  {
+    "id": 10,
+    "name": "Candidate 10 C3 P2",
+    "constituency": { "id": 3 },
+    "party": { "id": 2 }
+  },
+  {
+    "id": 11,
+    "name": "Candidate 11 C3 P3",
+    "constituency": { "id": 3 },
+    "party": { "id": 3 }
+  },
+  {
+    "id": 12,
+    "name": "Candidate 12 C3 P4",
+    "constituency": { "id": 3 },
+    "party": { "id": 4 }
+  },
+  {
+    "id": 13,
+    "name": "Candidate 13 C4 P1",
+    "constituency": { "id": 4 },
+    "party": { "id": 1 }
+  },
+  {
+    "id": 14,
+    "name": "Candidate 14 C4 P2",
+    "constituency": { "id": 4 },
+    "party": { "id": 2 }
+  },
+  {
+    "id": 15,
+    "name": "Candidate 15 C4 P3",
+    "constituency": { "id": 4 },
+    "party": { "id": 3 }
+  },
+  {
+    "id": 16,
+    "name": "Candidate 16 C4 P4",
+    "constituency": { "id": 4 },
+    "party": { "id": 4 }
+  },
+  {
+    "id": 17,
+    "name": "Candidate 17 C5 P1",
+    "constituency": { "id": 5 },
+    "party": { "id": 1 }
+  },
+  {
+    "id": 18,
+    "name": "Candidate 18 C5 P2",
+    "constituency": { "id": 5 },
+    "party": { "id": 2 }
+  },
+  {
+    "id": 19,
+    "name": "Candidate 19 C5 P3",
+    "constituency": { "id": 5 },
+    "party": { "id": 3 }
+  },
+  {
+    "id": 20,
+    "name": "Candidate 20 C5 P4",
+    "constituency": { "id": 5 },
+    "party": { "id": 4 }
+  }
+]
