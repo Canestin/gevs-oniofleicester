@@ -1,7 +1,7 @@
 import { Strategy } from 'passport-local';
 import { PassportStrategy } from '@nestjs/passport';
 import { Injectable } from '@nestjs/common';
-import { VoterAuthService } from '../voter-auth.service';
+import { AuthService } from '../auth.service';
 
 /**
  * Passport local strategy wrapper
@@ -11,7 +11,7 @@ import { VoterAuthService } from '../voter-auth.service';
  */
 @Injectable()
 export class LocalStrategy extends PassportStrategy(Strategy) {
-  constructor(private voterAuthService: VoterAuthService) {
+  constructor(private authService: AuthService) {
     super({
       usernameField: 'email',
       passwordField: 'password',
@@ -20,6 +20,6 @@ export class LocalStrategy extends PassportStrategy(Strategy) {
 
   // Passport will attach it as a property "user" on the Request object.
   async validate(email: string, password: string): Promise<any> {
-    return await this.voterAuthService.validateVoter(email, password);
+    return await this.authService.validateUser(email, password);
   }
 }

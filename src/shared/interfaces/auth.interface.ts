@@ -22,7 +22,7 @@ export class CreateJwtRequest {
   @IsDefined()
   @ApiProperty({
     description: 'Email of an existing user',
-    example: 'admin.tech@tagira.africa',
+    example: 'admin.tech@GEVS.africa',
   })
   email: string;
 

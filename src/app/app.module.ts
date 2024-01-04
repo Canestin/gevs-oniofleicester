@@ -1,7 +1,6 @@
 import { Module } from '@nestjs/common';
 import { CandidateModule } from '../candidate/candidate.module';
 import { PartyModule } from '../party/party.module';
-import { UvcCodeModule } from '../uvc_code/uvc_code.module';
 import { VoterModule } from '../voter/voter.module';
 import { AppController } from './app.controller';
 import { TypeOrmModule } from '@nestjs/typeorm';
@@ -16,7 +15,6 @@ import { GevsModule } from '../gevs/gevs.module';
     VoterModule,
     CandidateModule,
     PartyModule,
-    UvcCodeModule,
     SharedModule,
     ConstituencyModule,
     GevsModule,
