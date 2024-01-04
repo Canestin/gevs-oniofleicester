@@ -3,7 +3,7 @@ import * as dotenv from 'dotenv';
 import { Candidate } from './src/candidate/entities/candidate.entity';
 import { Constituency } from './src/constituency/entities/constituency.entity';
 import { Party } from './src/party/entities/party.entity';
-import { UvcCode } from './src/uvc_code/entities/uvc_code.entity';
+import { UvcCode } from './src/voter/entities/uvc_code.entity';
 import { Voter } from './src/voter/entities/voter.entity';
 import { Status } from './src/gevs/entities/status.entity';
 import { Admin } from './src/gevs/entities/admin.entity';
