@@ -107,50 +107,6 @@ export class RefreshJwtRequest {
   refreshToken: string;
 }
 
-export class ForgotPasswordRequest {
-  @IsEmail()
-  @IsDefined()
-  @ApiProperty({
-    description: 'Email of an existing user',
-    example: 'my@email.com',
-  })
-  email: string;
-}
-
-export class ResetPasswordRequest {
-  @IsString()
-  @ApiProperty({
-    description: 'The new password',
-    example: 'password',
-  })
-  password: string;
-}
-
-export class DeleteAccountRequest {
-  @IsString()
-  @ApiProperty({
-    description: 'The password of seller',
-    example: 'password',
-  })
-  password: string;
-}
-
-export class EditPasswordRequest {
-  @IsString()
-  @ApiProperty({
-    description: 'The current password',
-    example: 'passwordX',
-  })
-  currentPassword: string;
-
-  @IsString()
-  @ApiProperty({
-    description: 'The new password',
-    example: 'passwordY',
-  })
-  newPassword: string;
-}
-
 export class SuccessResponse {
   @IsIn([200, 201, 202])
   @ApiProperty({

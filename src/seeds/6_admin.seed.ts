@@ -1,6 +1,6 @@
 import { Factory, Seeder } from 'typeorm-seeding';
 import { Connection } from 'typeorm';
-const admins = require('./data/sellers.json');
+const admins = require('./data/admin.json');
 import * as bcrypt from 'bcrypt';
 import { Admin } from '../gevs/entities/admin.entity';
 import { SALT_ROUNDS } from '../shared/services/encryption.service';
