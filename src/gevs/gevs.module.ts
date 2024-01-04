@@ -4,7 +4,7 @@ import { GevsController } from './gevs.controller';
 import { ConstituencyModule } from '../constituency/constituency.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { Status } from './entities/status.entity';
-import { PartyModule } from 'src/party/party.module';
+import { PartyModule } from '../party/party.module';
 
 @Module({
   imports: [

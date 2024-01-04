@@ -71,21 +71,26 @@ export class RolesGuard implements CanActivate {
      */
     if (!hasOwnRoles) return false;
 
+    console.log('user', user);
     let hasOwnAccess = user.id === request.params.userId;
     if (user instanceof Voter) {
       hasOwnAccess =
         hasOwnAccess ||
-        user.id === request.params.voterId ||
-        user.id === request.query.voterId ||
-        user.id === request.body.voterId;
+        user.id == request.params.voterId ||
+        user.id == request.query.voterId ||
+        user.id == request.body.voterId;
+
+      console.log('request.body', request.body);
     }
     if (user instanceof Admin) {
       hasOwnAccess =
         hasOwnAccess ||
-        user.id === request.params.adminId ||
-        user.id === request.query.adminId ||
-        user.id === request.body.adminId;
+        user.id == request.params.adminId ||
+        user.id == request.query.adminId ||
+        user.id == request.body.adminId;
     }
+
+    console.log('hasOwnAccess', hasOwnAccess);
 
     return hasOwnAccess;
   }

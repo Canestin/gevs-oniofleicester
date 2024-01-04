@@ -1,4 +1,4 @@
-import { AppRole } from 'src/shared/interfaces/auth.interface';
+import { AppRole } from '../../shared/interfaces/auth.interface';
 import {
   BaseEntity,
   Column,

@@ -1,6 +1,6 @@
 import { Factory, Seeder } from 'typeorm-seeding';
 import { Connection } from 'typeorm';
-import { UvcCode } from '../uvc_code/entities/uvc_code.entity';
+import { UvcCode } from '../voter/entities/uvc_code.entity';
 const uvc_codes = require('./data/uvc_codes.json');
 
 export default class CreateUvcCodes implements Seeder {

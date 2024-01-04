@@ -9,6 +9,8 @@ import { SharedModule } from '../shared/shared.module';
 import { EncryptionService } from '../shared/services/encryption.service';
 import { ConstituencyModule } from '../constituency/constituency.module';
 import { GevsModule } from '../gevs/gevs.module';
+import { AccessControlModule } from 'nest-access-control';
+import { roles } from './app.roles';
 
 @Module({
   imports: [
@@ -18,6 +20,7 @@ import { GevsModule } from '../gevs/gevs.module';
     SharedModule,
     ConstituencyModule,
     GevsModule,
+    AccessControlModule.forRoles(roles),
     TypeOrmModule.forRoot(config),
   ],
   controllers: [AppController],

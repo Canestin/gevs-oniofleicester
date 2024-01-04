@@ -12,9 +12,9 @@ import { CreateVoterDto } from './dto/create-voter.dto';
 import { UpdateVoterDto } from './dto/update-voter.dto';
 import { ToVoteDto } from './dto/to-vote.dto';
 import { UseRoles } from 'nest-access-control';
-import { JwtAuthGuard } from 'src/auth/jwt/jwt-auth.guard';
-import { RolesGuard } from 'src/shared/guards/roles.guard';
-import { ApiResources } from 'src/app/app.roles';
+import { JwtAuthGuard } from '../auth/jwt/jwt-auth.guard';
+import { RolesGuard } from '../shared/guards/roles.guard';
+import { ApiResources } from '../app/app.roles';
 
 @Controller('voter')
 export class VoterController {
@@ -82,18 +82,11 @@ export class VoterController {
    * Vote a candidate
    */
   @UseGuards(JwtAuthGuard, RolesGuard)
-  @UseRoles(
-    {
-      resource: ApiResources.VOTE,
-      action: 'create',
-      possession: 'own',
-    },
-    {
-      resource: ApiResources.VOTE,
-      action: 'create',
-      possession: 'any',
-    },
-  )
+  @UseRoles({
+    resource: ApiResources.VOTE,
+    action: 'create',
+    possession: 'own',
+  })
   @Post('vote')
   toVote(@Body() toVoteDto: ToVoteDto) {
     return this.voterService.toVote(toVoteDto);

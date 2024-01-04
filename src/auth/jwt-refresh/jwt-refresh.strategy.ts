@@ -5,7 +5,7 @@ import { jwtConstants } from '../constants';
 import { Repository } from 'typeorm';
 import { InjectRepository } from '@nestjs/typeorm';
 import { RevokedRefreshToken } from '../revoked-refresh-token.entity';
-import { JsonWebToken } from 'src/shared/interfaces/auth.interface';
+import { JsonWebToken } from '../../shared/interfaces/auth.interface';
 import { JwtService } from '@nestjs/jwt';
 import { Voter } from '../../voter/entities/voter.entity';
 import { Admin } from '../../gevs/entities/admin.entity';

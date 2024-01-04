@@ -23,7 +23,7 @@ roles
   .grant(AppRole.VOTER)
   .readOwn(ApiResources.VOTER)
   .updateOwn(ApiResources.VOTER)
-  .createAny(ApiResources.VOTE);
+  .createOwn(ApiResources.VOTE);
 
 // Admin authorizations
 for (const key in ApiResources) {
