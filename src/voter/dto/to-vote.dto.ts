@@ -1,5 +1,5 @@
 import { ApiProperty } from '@nestjs/swagger';
-import { IsEmail, IsNotEmpty, IsNumber, IsString } from 'class-validator';
+import { IsNotEmpty, IsNumber, IsString } from 'class-validator';
 
 export class ToVoteDto {
   @IsNotEmpty()
@@ -8,7 +8,7 @@ export class ToVoteDto {
     description: 'The ID of the candidate',
     example: 1,
   })
-  candidateId: string;
+  candidateId: number;
 
   @IsNotEmpty()
   @IsNumber()
@@ -16,5 +16,5 @@ export class ToVoteDto {
     description: 'The ID of the voter',
     example: 2,
   })
-  voterId: string;
+  voterId: number;
 }
