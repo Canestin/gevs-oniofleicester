@@ -18,8 +18,8 @@ export class PartyController {
     return this.partyService.findAllParties();
   }
 
-  @Get(':id')
-  findOne(@Param('id') id: string) {
+  @Get(':partyId')
+  findOne(@Param('partyId') id: string) {
     return this.partyService.findOne(+id);
   }
 }

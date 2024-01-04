@@ -18,8 +18,8 @@ export class CandidateController {
     return this.candidateService.findAll();
   }
 
-  @Get(':id')
-  findOne(@Param('id') id: string) {
+  @Get(':candidateId')
+  findOne(@Param('candidateId') id: string) {
     return this.candidateService.findOne(+id);
   }
 }
