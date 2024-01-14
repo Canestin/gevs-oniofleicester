@@ -2,7 +2,7 @@ import { Controller, Get, Param } from '@nestjs/common';
 import { ConstituencyService } from './constituency.service';
 import { ResultsByConstituency } from '../shared/interfaces/result.interface';
 
-@Controller('constituency')
+@Controller('constituencies')
 export class ConstituencyController {
   constructor(private readonly constituencyService: ConstituencyService) {}
 

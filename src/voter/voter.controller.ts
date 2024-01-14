@@ -16,7 +16,7 @@ import { JwtAuthGuard } from '../auth/jwt/jwt-auth.guard';
 import { RolesGuard } from '../shared/guards/roles.guard';
 import { ApiResources } from '../app/app.roles';
 
-@Controller('voter')
+@Controller('voters')
 export class VoterController {
   constructor(private readonly voterService: VoterService) {}
 
